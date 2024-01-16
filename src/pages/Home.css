@@ -1,0 +1,10 @@
+.home-container {
+    display: flex;
+  }
+  
+  .main-content {
+    margin-left: 1rem;/* Set the width of your Sidebar */
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+  
