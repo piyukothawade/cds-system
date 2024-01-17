@@ -50,7 +50,7 @@ const AddExpenseTypeModal = ({ showModal, onClose, fields, mode, onSave, expense
                     className="form-control"
                     id={field.name}
                     name={field.name}
-                    value={formData[field.name] || ''}
+                    defaultValue={formData[field.name] || ''}
                     onChange={handleInputChange}
                   />
                 </div>

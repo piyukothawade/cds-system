@@ -5,6 +5,8 @@ import DynamicTable from "../component/DynamicTable";
 import FetchData from '../component/FetchData';
 import Layout from '../component/Layout';
 
+const baseUrl = process.env.REACT_APP_API_URL;
+
 const customerFormFields = [
   { name: 'custName', label: 'Name' },
   { name: 'custMobile', label: 'Phone' },
@@ -44,7 +46,7 @@ export const Customer = () => {
     setSelectedCustomer(null);
   };
 
-  const baseUrl = process.env.REACT_APP_API_URL;
+ 
 
   const updateSummaryValues = (data) => {
     const customers = data.customers || [];
